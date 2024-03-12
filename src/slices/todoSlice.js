@@ -1,18 +1,25 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+
 export const todoSlice = createSlice({
   name: "todos",
   initialState: {
-    list: [],
+    list:JSON.parse(localStorage.getItem("listItems")),
     filter: "all",
+
+
   },
   reducers: {
-    addTodo: (state, action) => {
+    addTodo: (state, action,) => {
       state.list.push({
         id: new Date().toISOString(),
         text: action.payload,
         completed: false,
       })
+
+   
+      let listData = JSON.stringify(state.list)
+      localStorage.setItem("listItems", listData)
     },
     toggleTodo: (state, action) => {
       const todo = state.list.find((todo) => todo.id === action.payload)
@@ -26,7 +33,8 @@ export const todoSlice = createSlice({
     },
     filterTodo: (state, action) => {
       state.filter = action.payload
-    }
+    },
+
   }
 })
 
