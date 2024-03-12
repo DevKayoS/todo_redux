@@ -1,8 +1,7 @@
-# React + Vite
+# Todo com redux
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![image](https://github.com/DevKayoS/todo_redux/assets/157029608/e158cd32-d10c-4e0f-b0a6-561a02b523b4)
 
-Currently, two official plugins are available:
+##
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Essa é uma aplicação de todo list feita com Redux feita no intuito de estudos
